@@ -1,0 +1,29 @@
+$unit: "px";
+@mixin list-loop($className, $styleName, $offset, $i, $max) {
+  @while $i <= $max {
+    #{$className + $i} {
+      #{$styleName}: #{$i + $unit} !important;
+    }
+    $i: $i + $offset;
+  }
+}
+//Top
+@include list-loop(".af-p-t-", "padding-top", 4, 4, 32);
+@include list-loop(".af-p-t-", "padding-top", 8, 32, 48);
+@include list-loop(".af-p-t-", "padding-top", 1, 64, 64);
+//Bottom
+@include list-loop(".af-p-b-", "padding-bottom", 4, 4, 32);
+@include list-loop(".af-p-b-", "padding-bottom", 8, 32, 48);
+@include list-loop(".af-p-b-", "padding-bottom", 1, 64, 64);
+//Left
+@include list-loop(".af-p-l-", "padding-left", 4, 4, 32);
+@include list-loop(".af-p-l-", "padding-left", 8, 32, 48);
+@include list-loop(".af-p-l-", "padding-left", 1, 64, 64);
+//right
+@include list-loop(".af-p-r-", "padding-right", 4, 4, 32);
+@include list-loop(".af-p-r-", "padding-right", 8, 32, 48);
+@include list-loop(".af-p-r-", "padding-right", 1, 64, 64);
+//Box
+@include list-loop(".af-p-", "padding", 4, 4, 32);
+@include list-loop(".af-p-", "padding", 8, 32, 48);
+@include list-loop(".af-p-", "padding", 1, 64, 64);

@@ -1,0 +1,141 @@
+@import "./design-tokens";
+@import "./fonts";
+@import "./margins";
+@import "./paddings";
+* {
+  font-family: "Brother", Arial, Helvetica, sans-serif;
+}
+
+.slds-text-heading_medium {
+  font-weight: 600;
+}
+:root {
+  --sds-c-button-radius-border: 4px;
+  --sds-c-button-brand-color-background: var(--brand-primary);
+  --sds-c-button-brand-color-background-hover: var(--brand-primary-hover);
+  --sds-c-button-outline-brand-color-border: var(--brand-primary);
+  --sds-c-button-outline-brand-color-border-hover: var(--brand-primary-hover);
+  --sds-c-button-text-color: var(--brand-primary);
+  --sds-c-button-text-color-hover: var(--brand-primary-hover);
+  --sds-c-button-success-color-background: var(--color-background-success);
+  --sds-c-button-success-color-border: var(--color-background-success);
+  --sds-c-button-success-color-background-hover: var(
+    --color-background-success-hover
+  );
+  --sds-c-button-success-color-border-hover: var(
+    --color-background-success-hover
+  );
+  --sds-c-input-radius-border: none;
+  --sds-c-tabs-item-color-border-active: var(--brand-primary);
+  --sds-c-tabs-item-color-border-hover: var(--brand-primary);
+  --sds-c-badge-color-background: var(--color-bg-badge-default);
+  --sds-c-badge-text-color: var(--brand-primary);
+  --sds-c-badge-inverse-color-background: var(--color-bg-badge-inverse);
+  --sds-c-badge-icon-color-foreground: var(--brand-primary);
+  --sds-c-checkbox-color-background-checked: var(--brand-primary);
+  --sds-c-checkbox-color-border-checked: var(--brand-primary);
+  --sds-c-checkbox-mark-color-foreground: var(--white);
+  --sds-c-checkbox-color-border-focus: var(--color-border);
+  --sds-c-checkbox-shadow-focus: none;
+  --sds-c-checkbox-radius-border: none;
+  --sds-c-radio-color-border-checked: var(--brand-primary);
+  --sds-c-radio-color-border: var(--brand-primary);
+  --sds-c-radio-color-border-focus: var(--brand-primary);
+  --sds-c-radio-mark-color-foreground: var(--brand-primary-hover);
+  --sds-c-radio-shadow-focus: none;
+  --sds-c-checkbox-toggle-color-background: var(--toggle-color);
+  --sds-c-checkbox-toggle-color-border: var(--toggle-color);
+  --sds-c-checkbox-toggle-color-border-focus: var(--toggle-color);
+  --sds-c-checkbox-toggle-color-background-focus: var(--toggle-color);
+  --sds-c-checkbox-toggle-color-background-hover: var(--toggle-color);
+  --sds-c-checkbox-toggle-color-border-checked: var(
+    --color-background-success-hover
+  );
+  --sds-c-checkbox-toggle-color-background-checked: var(
+    --color-background-success-hover
+  );
+  --sds-c-checkbox-toggle-color-background-checked-hover: var(
+    --color-background-success-hover
+  );
+  --sds-c-checkbox-toggle-color-background-checked-focus: var(
+    --color-background-success-hover
+  );
+  --sds-c-checkbox-toggle-shadow-focus: none;
+  --sds-c-select-radius-border: none;
+}
+
+// .slds-button {
+//   font-weight: bold;
+//   text-transform: uppercase;
+// }
+
+.slds-form-element__label {
+  color: #000 !important;
+}
+
+.slds-form-element__help {
+  font-size: 10px !important;
+  color: #666666;
+}
+
+.slds-checkbox .slds-checkbox_faux {
+  border-width: 2px !important;
+}
+input:indeterminate,
+.indeterminate {
+  --sds-c-checkbox-color-background-checked: var(--white);
+  --sds-c-checkbox-color-border-checked: var(--color-border);
+  --sds-c-checkbox-mark-color-foreground: var(--brand-primary);
+}
+.no-theme {
+  &.slds-button {
+    font-weight: normal;
+    text-transform: none;
+  }
+}
+/*
+.slds-badge {
+  &.slds-theme_success {
+    background-color: var(--color-background-success);
+  }
+  &.slds-theme_warning {
+    background-color: #ff4817;
+    color: #fff !important;
+    .slds-icon {
+      fill: #fff;
+    }
+  }
+}
+
+.slds-dropdown,
+.slds-datepicker tbody > tr > td > .slds-day {
+  border-radius: 0 !important;
+}
+
+.slds-datepicker tbody > tr > td.slds-is-selected > .slds-day {
+  background: var(--brand-primary) !important;
+}
+
+.slds-text-link {
+  color: var(--brand-primary) !important;
+}
+.slds-datepicker
+  td.slds-is-selected-multi
+  + .slds-is-selected-multi
+  > .slds-day {
+  &::before,
+  &::after {
+    background: var(--brand-primary) !important;
+  }
+}
+.slds-datepicker
+  .slds-has-multi-row-selection
+  .slds-is-selected-multi:first-child
+  > .slds-day:before,
+.slds-datepicker
+  .slds-has-multi-row-selection
+  .slds-is-selected-multi:last-child
+  > .slds-day:after {
+  background: var(--brand-primary) !important;
+}
+*/
