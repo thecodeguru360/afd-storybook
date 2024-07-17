@@ -2,14 +2,24 @@ import "@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-s
 import "./assets/theme/guidewire.scss";
 import "./App.css";
 import { AfdButton } from "./components/Button";
+import { AfdAccordion, AfdAccordionContainer } from "./components/AfdAccordion";
 
 function App() {
   return (
     <div className="content-box">
-      <div className="slds-text-longform">
+      <div className="">
         <h1 className="slds-text-heading_large">Components</h1>
 
         <AfdButton>Base Button</AfdButton>
+
+        <AfdAccordionContainer>
+          <AfdAccordion title="Accordion A">
+            <p>Accordion Details A</p>
+          </AfdAccordion>
+          <AfdAccordion title="Accordion B" isOpen>
+            <p>Accordion Details B</p>
+          </AfdAccordion>
+        </AfdAccordionContainer>
 
         <h3 className="slds-text-heading_small">Heading Small</h3>
         <ol>
