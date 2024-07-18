@@ -1,8 +1,9 @@
 import "@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css";
 import "./assets/theme/guidewire.scss";
 import "./App.css";
-import { AfdButton } from "./components/Button";
+import { AfdButton } from "./components/AfdButton";
 import { AfdAccordion, AfdAccordionContainer } from "./components/AfdAccordion";
+import { AfdIcon } from "./components/AfdIcon";
 
 function App() {
   return (
@@ -20,6 +21,14 @@ function App() {
             <p>Accordion Details B</p>
           </AfdAccordion>
         </AfdAccordionContainer>
+
+        <AfdIcon
+          icon="description"
+          title="description Icon"
+          type="action"
+          size="xx-small"
+          containerClasses="slds-icon_container_circle"
+        />
 
         <h3 className="slds-text-heading_small">Heading Small</h3>
         <ol>
