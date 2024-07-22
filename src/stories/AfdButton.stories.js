@@ -1,5 +1,5 @@
 import { fn } from "@storybook/test";
-import { AfdButton } from "../components/AfdButton";
+import { AfdButton } from "../afd-components/AfdButton";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {

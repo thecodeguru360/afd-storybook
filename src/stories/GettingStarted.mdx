@@ -1,0 +1,56 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+
+<Meta title="Getting Started/Installation" id="getting-started-installation" />
+
+<h1>Affinity Design System</h1>
+
+## Requirements
+
+Affinity design system required following to be installed into your application:
+
+- React 16.8.0+
+- Lightning Design System 2.24.2 or +
+
+
+## Installation
+
+If you DO NOT already have Lightning Design System installed
+
+### npm
+
+```sh
+npm install @salesforce-ux/design-system --save
+```
+or refer to <a href="https://www.lightningdesignsystem.com/resources/downloads/">Lightning Design Downloads Page</a>
+
+
+## Affinity Design System Integration
+
+To integrate the AFDs into your react application, you must download the afd-components folder and assests folder from the repository.
+
+<a href="#">Download the Zip</a> 
+
+After downloading the assets and afd-components, place these folders into you src folder.
+
+### Importing the Styles
+
+In your App.jsx or react entry point file, import the styles like this:
+
+1- Import the Lightning Design System styles
+```
+import "@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css";
+```
+2- Import the Affinity Design System styles
+```
+import "./assets/theme/affinity-design-system.scss";
+```
+
+### Importing the components
+
+Example: Importing the AfdButton component: 
+
+```
+import { AfdButton } from "./afd-components/AfdButton";
+```
+
+You can refer to component docs for furter usage detalis.

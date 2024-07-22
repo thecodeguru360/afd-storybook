@@ -1,7 +1,7 @@
 import {
   AfdAccordion,
   AfdAccordionContainer,
-} from "../components/AfdAccordion";
+} from "../afd-components/AfdAccordion";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {

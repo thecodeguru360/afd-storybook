@@ -1,9 +1,12 @@
 import "@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css";
-import "./assets/theme/guidewire.scss";
+import "./assets/theme/affinity-design-system.scss";
 import "./App.css";
-import { AfdButton } from "./components/AfdButton";
-import { AfdAccordion, AfdAccordionContainer } from "./components/AfdAccordion";
-import { AfdIcon } from "./components/AfdIcon";
+import { AfdButton } from "./afd-components/AfdButton";
+import {
+  AfdAccordion,
+  AfdAccordionContainer,
+} from "./afd-components/AfdAccordion";
+import { AfdIcon } from "./afd-components/AfdIcon";
 
 function App() {
   return (
