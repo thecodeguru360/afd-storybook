@@ -7,12 +7,38 @@ import {
   AfdAccordionContainer,
 } from "./afd-components/AfdAccordion";
 import { AfdIcon } from "./afd-components/AfdIcon";
+import { AfdMenus } from "./afd-components/AfdMenus";
 
 function App() {
   return (
     <div className="content-box">
       <div className="">
         <h1 className="slds-text-heading_large">Components</h1>
+
+        <AfdMenus
+          menuList={[
+            { title: "Menus", isHeader: true },
+            {
+              title: "Menu A",
+              icon: "search",
+              iconType: "utility",
+              iconPosition: "left",
+            },
+            {
+              title: "Menu B",
+              icon: "search",
+              iconType: "utility",
+              iconPosition: "left",
+            },
+            { isDivider: true },
+            {
+              title: "Menu C",
+              icon: "search",
+              iconType: "utility",
+              iconPosition: "right",
+            },
+          ]}
+        />
 
         <AfdButton>Base Button</AfdButton>
 
