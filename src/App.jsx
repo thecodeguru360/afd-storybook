@@ -8,13 +8,14 @@ import {
 } from "./afd-components/AfdAccordion";
 import { AfdIcon } from "./afd-components/AfdIcon";
 import { AfdMenus } from "./afd-components/AfdMenus";
+import { AfdAvatar } from "./afd-components/AfdAvatar";
 
 function App() {
   return (
     <div className="content-box">
       <div className="">
         <h1 className="slds-text-heading_large">Components</h1>
-
+        <AfdAvatar />
         <AfdMenus
           menuList={[
             { title: "Menus", isHeader: true },

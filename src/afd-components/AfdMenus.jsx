@@ -1,12 +1,9 @@
 import UtilitySpriteSymbol from "../assets/icons/utility-sprite/svg/symbols.svg";
-import ActionSpriteSymbol from "../assets/icons/action-sprite/svg/symbols.svg";
-import CustomSpriteSymbol from "../assets/icons/custom-sprite/svg/symbols.svg";
-import DoctypeSpriteSymbol from "../assets/icons/doctype-sprite/svg/symbols.svg";
-import StandardSpriteSymbol from "../assets/icons/standard-sprite/svg/symbols.svg";
 
 import { PropTypes } from "prop-types";
 import cn from "classnames";
 import { useState } from "react";
+import { AfdSvgIcon } from "./AfdSvgIcon";
 
 export const AfdMenus = ({
   isOpen,
@@ -64,41 +61,6 @@ export const AfdMenus = ({
   );
 };
 
-const Icon = ({
-  icon,
-  type = "utility",
-  position = "left",
-  color = "default",
-}) => {
-  let iconRef = UtilitySpriteSymbol + "#" + icon;
-  if (type === "action") {
-    iconRef = ActionSpriteSymbol + "#" + icon;
-  }
-  if (type === "custom") {
-    iconRef = CustomSpriteSymbol + "#" + icon;
-  }
-  if (type === "doctype") {
-    iconRef = DoctypeSpriteSymbol + "#" + icon;
-  }
-  if (type === "standard") {
-    iconRef = StandardSpriteSymbol + "#" + icon;
-  }
-  const iconClassList = cn({
-    "slds-icon": true,
-    "slds-icon_x-small": true,
-    "slds-m-right_x-small": position === "left",
-    "slds-m-left_x-small": position === "right",
-    " slds-shrink-none": position === "right",
-    "slds-icon-text-default": color === "default",
-  });
-
-  return (
-    <svg className={iconClassList} aria-hidden="true">
-      <use xlinkHref={iconRef}></use>
-    </svg>
-  );
-};
-
 const renderMenuItem = (menu, i) => {
   let item = (
     <li key={i} className="slds-dropdown__item" role="presentation">
@@ -133,7 +95,7 @@ const renderMenuItem = (menu, i) => {
         <a href="#" role="menuitem" tabIndex="-1">
           <span className="slds-truncate" title={menu.title}>
             {menu.iconPosition === "left" && (
-              <Icon
+              <AfdSvgIcon
                 icon={menu.icon}
                 type={menu.iconType}
                 position={menu.iconPosition}
@@ -141,7 +103,7 @@ const renderMenuItem = (menu, i) => {
             )}
             {menu.title}
             {menu.iconPosition === "right" && (
-              <Icon
+              <AfdSvgIcon
                 icon={menu.icon}
                 type={menu.iconType}
                 position={menu.iconPosition}
@@ -153,13 +115,6 @@ const renderMenuItem = (menu, i) => {
     );
   }
   return item;
-};
-
-Icon.propTypes = {
-  icon: PropTypes.string,
-  type: PropTypes.string,
-  position: PropTypes.string,
-  color: PropTypes.string,
 };
 
 AfdMenus.propTypes = {
