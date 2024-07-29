@@ -11,4 +11,4 @@ Once all the dependencies are installed, to run the app into your browser use th
 
 ``` npm run storybook ```
 
-
+This will open a new tab into your browser.
